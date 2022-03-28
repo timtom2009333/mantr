@@ -31,6 +31,7 @@
         background-color: #FFD79A;
     }
     body {
+      font-family: 'Dela Gothic One', cursive;
         background-color: #FFE3BA;
         color: #4d494d;
     }
@@ -93,6 +94,20 @@
         <a href="music.html" class="abc"><i class="fa-solid fa-music p"></i></a>
     </nav>
 </center>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "0f81b962-5282-4343-9b3b-da3a6ea89984",
+      safari_web_id: "",
+      notifyButton: {
+        enable: true,
+      },
+      subdomainName: "kalebdar",
+    });
+  });
+</script>
 <script src="https://kit.fontawesome.com/6bcbfb1811.js" crossorigin="anonymous"></script>
 <script>
     function Calendar2(id, year, month) {
@@ -136,5 +151,8 @@
       Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
     }
     </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet"> 
     </body>
     </html>
