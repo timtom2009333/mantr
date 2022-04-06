@@ -5,15 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лунный календарь</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script>
+    for ( let i = 1; i < 3; i++){
+
+         $( function(a) {
+         
+        $( "#dialog-message" ).dialog({
+          modal: true,
+          buttons: {
+            Ok: function() {
+              $( this ).dialog( "close" );
+            }
+          }
+        });
+      } );
+    }
+      </script>
 </head>
 <body>
   <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-  <script>
-     setTimeout(() => {  alert("Хотите бесплатно получить PRO версию приложения? Тогда переходите по этой ссылке https://alfa.me/bcPvjQ"); }, 10000);
-    setTimeout(() => {  alert("Хотите бесплатно получить PRO версию приложения? Тогда переходите по этой ссылке https://alfa.me/bcPvjQ"); }, 56000);
-    setTimeout(() => {  alert("Хотите бесплатно получить PRO версию приложения? Тогда переходите по этой ссылке https://alfa.me/bcPvjQ"); }, 180000);
-
-  </script>
+  <div id="dialog-message" title="Бонус" style="background-color: white;">
+    <p>
+      <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+    Хотите получить PRO версию приложения бесплатно?
+    </p>
+    <p>
+      Тогда преходите по ссылке и оформляйте карту у наших партнёров и получайте PRO версию приложения бесплатно!<a href="https://alfa.me/bcPvjQ">ССЫЛКА</a>
+    </p>
+  </div>
 <style>
     .o {
         color: #D88200; 
